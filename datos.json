@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "nombre": "Centro de Salud N°12",
+        "descripcion": "Atención primaria de la salud. Medicina general y pediatría. Lunes a viernes de 7 a 20 hs.",
+        "x": 32,
+        "y": 28
+    },
+    {
+        "id": 2,
+        "nombre": "Escuela Primaria Müller",
+        "descripcion": "Jornada completa. Nivel inicial y primario. Más de 300 alumnos inscriptos en el ciclo 2026.",
+        "x": 65,
+        "y": 58
+    }
+]
