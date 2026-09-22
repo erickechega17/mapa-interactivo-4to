@@ -11,25 +11,25 @@ Correr con: python app.py   (y entrar a http://localhost:5000)
 """
 
 import json
-from flask import Flask, jsonify
-
-app = Flask(__name__, static_folder="static", static_url_path="")
-
-
+from flask import Flask, jsonify, render_template
+ 
+app = Flask(__name__)
+ 
+ 
 def cargar_datos():
     with open("datos.json", "r", encoding="utf-8") as archivo:
         return json.load(archivo)
-
-
+ 
+ 
 @app.route("/")
 def index():
-    return app.send_static_file("index.html")
-
-
+    return render_template("index.html")
+ 
+ 
 @app.route("/api/lugares")
 def api_lugares():
     return jsonify(cargar_datos())
-
-
+ 
+ 
 if __name__ == "__main__":
     app.run(debug=True)
